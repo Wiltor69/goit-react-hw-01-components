@@ -20,6 +20,12 @@ border: 2px solid black;
 
 `;
 
+export const Trsecond = styled.tr`
+border-collapse: collapse;
+border: 2px solid black;
+
+`;
+
 export const Th = styled.th`
 text-align: center;
 font-family: 'Roboto', sans-serif;
@@ -35,6 +41,9 @@ border: 2px solid black;
 
 export const Tbody = styled.tbody`
 text-align:center;
+:nth-child(2n){
+    background: silver;
+}
 
 `;
 
@@ -48,5 +57,8 @@ font-style: normal;
 font-weight: 400;
 color:black;
 border: 2px solid black;
+:nth-child(2n){
+    background-color:white;
+}
 
 `;

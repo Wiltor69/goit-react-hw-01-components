@@ -6,7 +6,7 @@ export const FriendList = ({ friends }) => {
 <List>
             {friends.map(friend => (
                 <ListItem  key = {friend.id}>
-                    <Span >
+                    <Span variant = {friend.isOnline}>
                         <VscCircleLargeFilled size={20} />
                         {/* {friend.isOnline} */}
                     </Span>

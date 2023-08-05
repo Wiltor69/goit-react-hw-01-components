@@ -29,7 +29,9 @@ padding-right: 15px;
 export const Span = styled.span`
 display:block;
 margin-right:15px;
-color: ${props => (props.isOnline === true ? "green" : "red")};
+color: ${props => (props.variant === true ? "green" : "red")};
+padding:10px;
+
 `;
 
 export const Img = styled.img`

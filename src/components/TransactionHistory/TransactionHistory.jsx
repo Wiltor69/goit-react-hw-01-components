@@ -1,4 +1,4 @@
-import { Table, Tbody, Td, Th, Thead, Tr } from "./TransactionHistory.styled";
+import { Table, Tbody, Td, Th, Thead, Tr, Trsecond } from "./TransactionHistory.styled";
 
 
 export const TransactionHistory = ({ items }) => {
@@ -15,11 +15,11 @@ export const TransactionHistory = ({ items }) => {
   <Tbody>
                 
                 {items.map(item => (
-                        <Tr key = {item.id}>
+                        <Trsecond key = {item.id}>
                         <Td>{ item.type}</Td>
                         <Td>{item.amount}</Td>
                         <Td>{ item.currency}</Td>
-      </Tr>))}
+      </Trsecond>))}
       
     
     
