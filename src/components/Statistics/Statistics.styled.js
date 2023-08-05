@@ -18,6 +18,7 @@ margin-bottom:45px;
 `;
 
 export const Title = styled.h2`
+
 width:250px;
 background-color:white;
 margin:0 auto;

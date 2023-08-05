@@ -5,12 +5,9 @@ import { List, ListItem, Section, Span, Title,SpanSecond } from "./Statistics.st
 export const Statistics = ({ title, stats }) => {
     return (
       <Section >
-        {!title &&
-          <Title >Upload stats</Title>
-        }
+        {title = {title} && (<Title >  Upload stats </Title>)}
         <List>
-          
-                {stats.map(stat => (
+            {stats.map(stat => (
                   <ListItem key={stat.id}>
                     
                         <Span>{ stat.label}</Span>
