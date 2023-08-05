@@ -2,16 +2,20 @@ import { List, ListItem, Section, Span, Title,SpanSecond } from "./Statistics.st
 
 
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
     return (
-<Section >
-  <Title >Upload stats</Title>
-
-            <List>
+      <Section >
+        {!title &&
+          <Title >Upload stats</Title>
+        }
+        <List>
+          
                 {stats.map(stat => (
-                <ListItem key = {stat.id}>
+                  <ListItem key={stat.id}>
+                    
                         <Span>{ stat.label}</Span>
                         <SpanSecond>{ stat.percentage} %</SpanSecond>
+          
     </ListItem>
     ) )}
     
